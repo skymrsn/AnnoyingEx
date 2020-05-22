@@ -32,7 +32,7 @@ class AENotificationManager(private val context: Context) {
             .setSmallIcon(R.drawable.ic_sentiment_very_dissatisfied_black_24dp)
             .setContentTitle("罗梦月")
             .setContentText(message)
-            .setCategory("message")
+            .setCategory(NotificationCompat.CATEGORY_MESSAGE)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setContentIntent(pendingIntent)
             .setAutoCancel(true)
